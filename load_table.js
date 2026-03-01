@@ -9,55 +9,51 @@ function createAudioHTML(path, flat) {
         ' type="audio/wav">Your browser does not support the audio element.</audio>';
 }
 
-function generateCharacterVoiceTable(tableId, dataList, page) {
-    let numPerPage = 4;
+function generateCharacterVoiceTable(tableId, dataList) {
     let table = document.getElementById(tableId);
     let nrRows = table.rows.length;
     for (let i = 1; i < nrRows; i++) {
       table.deleteRow(1);
     }
-    const end_idx = Math.min(page * numPerPage, dataList.length);
-    for (let i = (page - 1) * numPerPage; i < end_idx; i++) {
-        let row = table.insertRow(i % numPerPage + 1);
-        row.style.height = '100px';
-        if (i < dataList.length) {
-            let data = dataList[i];
-            let id = data.id;
-            let instruction = data.instruction;
-            
-            // Instruction column
-            cell = row.insertCell(0);
-            cell.innerHTML = instruction;
-            cell.style.textAlign = "center";
-            cell.style.fontSize = "14px";
-            
-            // CosyVoice2 column
-            cell = row.insertCell(1);
-            cell.innerHTML = createAudioHTML('data/CosyVoice2-0.5B/' + id + '.wav', false);
-            cell.style.textAlign = "center";
-            
-            // VoiceSculptor column
-            cell = row.insertCell(2);
-            cell.innerHTML = createAudioHTML('data/VoiceSculptor/' + id + '.wav', false);
-            cell.style.textAlign = "center";
-            
-            // mix2-v2 column
-            cell = row.insertCell(3);
-            cell.innerHTML = createAudioHTML('data/mix2-v2/' + id + '.wav', false);
-            cell.style.textAlign = "center";
-            
-            // mix2-bert column
-            cell = row.insertCell(4);
-            cell.innerHTML = createAudioHTML('data/mix2-bert/' + id + '.wav', false);
-            cell.style.textAlign = "center";
     
-        } else {
-            for (let j = 0; j < 5; j++) {
-                let cell = row.insertCell(j);
-                cell.innerHTML = '<br>';
-                cell.style.textAlign = "center";
-            }
-        }
+    for (let i = 0; i < dataList.length; i++) {
+        let data = dataList[i];
+        let id = data.id;
+        let instruction = data.instruction;
+        
+        // Instruction row
+        let instructionRow = table.insertRow(i * 2 + 1);
+        let instructionCell = instructionRow.insertCell(0);
+        instructionCell.colSpan = 4;
+        instructionCell.innerHTML = instruction;
+        instructionCell.style.textAlign = "left";
+        instructionCell.style.fontSize = "14px";
+        instructionCell.style.padding = "10px";
+        instructionCell.style.backgroundColor = "#f8f9fa";
+        
+        // Audio row
+        let audioRow = table.insertRow(i * 2 + 2);
+        audioRow.style.height = '80px';
+        
+        // CosyVoice2 column
+        let cell = audioRow.insertCell(0);
+        cell.innerHTML = createAudioHTML('data/CosyVoice2-0.5B/' + id + '.wav', false);
+        cell.style.textAlign = "center";
+        
+        // VoiceSculptor column
+        cell = audioRow.insertCell(1);
+        cell.innerHTML = createAudioHTML('data/VoiceSculptor/' + id + '.wav', false);
+        cell.style.textAlign = "center";
+        
+        // mix2-v2 column
+        cell = audioRow.insertCell(2);
+        cell.innerHTML = createAudioHTML('data/mix2-v2/' + id + '.wav', false);
+        cell.style.textAlign = "center";
+        
+        // mix2-bert column
+        cell = audioRow.insertCell(3);
+        cell.innerHTML = createAudioHTML('data/mix2-bert/' + id + '.wav', false);
+        cell.style.textAlign = "center";
     }
 }
 
@@ -86,43 +82,6 @@ const table3_data = [
     {id: "22060", instruction: "一位中年女性，果决威严，身为帝王，声音沉稳浑厚、语调庄重。"}
 ];
 
-generateCharacterVoiceTable('character_table1', table1_data, 1);
-generateCharacterVoiceTable('character_table2', table2_data, 1);
-generateCharacterVoiceTable('character_table3', table3_data, 1);
-
-$(document).ready(function() {
-    for (let i = 1; i <= 1; i++) {
-      let id = '#character_table1-' + i;
-      $(id).click(function() {
-        generateCharacterVoiceTable('character_table1', table1_data, i);
-        $(id).parent().siblings().removeClass('active');
-        $(id).parent().addClass('active');
-        return false;
-      });
-    }
-});
-
-$(document).ready(function() {
-    for (let i = 1; i <= 2; i++) {
-      let id = '#character_table2-' + i;
-      $(id).click(function() {
-        generateCharacterVoiceTable('character_table2', table2_data, i);
-        $(id).parent().siblings().removeClass('active');
-        $(id).parent().addClass('active');
-        return false;
-      });
-    }
-});
-
-$(document).ready(function() {
-    for (let i = 1; i <= 1; i++) {
-      let id = '#character_table3-' + i;
-      $(id).click(function() {
-        generateCharacterVoiceTable('character_table3', table3_data, i);
-        $(id).parent().siblings().removeClass('active');
-        $(id).parent().addClass('active');
-        return false;
-      });
-    }
-});
-  
+generateCharacterVoiceTable('character_table1', table1_data);
+generateCharacterVoiceTable('character_table2', table2_data);
+generateCharacterVoiceTable('character_table3', table3_data);
