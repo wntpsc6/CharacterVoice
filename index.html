@@ -38,12 +38,12 @@
 
       <h2>Abstract</h2>
       <div>
-        Controllable TTS enables expressive speech synthesis, yet existing methods mainly focus on utterance-level control or simplistic speaker attributes, struggling to map holistic speaker descriptions to coherent speech. To bridge this gap, we propose CharacterVoice, a persona-driven framework that synthesizes customized speech from character profiles. Moving beyond acoustic-centric designs, CharacterVoice adopts persona-centric modeling conditioned on describable traits, aligning synthesis more intuitively with human intent. To capture vocal correlations and ensure stylistic coherence, we integrate instruction-level BERT embeddings as a semantic-enhanced prior. To address the scarcity of annotated data, we introduce a character-anchored annotation pipeline that leverages LLMs’ knowledge of well-known characters to link transient acoustic expressions with abstract personas. Experiments demonstrate that CharacterVoice outperforms baselines in both instruction adherence and naturalness.
+        0:58: Controllable TTS enables expressive speech synthesis, yet existing methods mainly focus on utterance-level control or simplistic speaker attributes, struggling to map holistic speaker descriptions to coherent speech. To bridge this gap, we propose CharacterVoice, a persona-driven framework that synthesizes customized speech from character profiles. Moving beyond acoustic-centric designs, CharacterVoice adopts persona-centric modeling conditioned on describable traits, aligning synthesis more intuitively with human intent. To capture vocal correlations and ensure stylistic coherence, we integrate instruction-level BERT embeddings as a semantic-enhanced prior. To address the scarcity of annotated data, we introduce a character-anchored annotation pipeline that leverages LLMs’ knowledge of well-known characters to link transient acoustic expressions with abstract personas. Experiments demonstrate that CharacterVoice outperforms baselines in both instruction adherence and naturalness.
       </div>
     </div>
 
     <div class="content">
-      <h2 id="model-overview">Architecture Overview-1</h2>
+      <h2 id="model-overview">Architecture Overview</h2>
       <p style="text-align: center;">
         <img src="picture/model.png" style="width: 60vw;">
       </p>
@@ -51,11 +51,11 @@
   </body>
 
 
-    <!-- 表格 1 -->
+    <!-- Table 1: Persona-Driven Controllable TTS -->
     <div class="content">
       <h2>Persona-Driven Controllable TTS</h2>
       <div class="desc-text">
-        本模块展示 CharacterVoice 在角色控制 TTS 任务上与基准模型的对比。这里可以填写您具体的实验说明内容（XXX）。
+        This section demonstrates the performance of CharacterVoice and other baselines in persona-driven controllable TTS. The synthesized speech should align with the abstract descriptions in the instruction.
       </div>
       <div class="table-responsive">
         <table class="table table-bordered pt-2" id="table1">
@@ -74,11 +74,11 @@
       </div>
     </div>
 
-    <!-- 表格 2 -->
+    <!-- Table 2: Ablation Study on Semantic Enhancement Strategy -->
     <div class="content">
       <h2>Ablation Study on Semantic Enhancement Strategy</h2>
       <div class="desc-text">
-        本模块展示消融实验结果，验证语义增强策略（Semantic Enhancement Strategy）的有效性。这里可以填写您的说明内容（XXX）。
+        This section presents the ablation study results, validating the effectiveness of our semantic enhancement strategy. Baseline is conditioned on text tokens of the instruction and content, while CharacterVoice uses an extra instruction-level BERT-encoded embedding entailing high-dimensional semantic information to enhance stylistic consistency and instruction adherence. 
       </div>
       <div class="table-responsive">
         <table class="table table-bordered pt-2" id="table2">
@@ -95,11 +95,11 @@
       </div>
     </div>
 
-    <!-- 表格 3 -->
+    <!-- Table 3: Voice Diversity -->
     <div class="content">
       <h2>Voice Diversity</h2>
       <div class="desc-text">
-        本模块展示 CharacterVoice 生成声音的多样性（Voice Diversity）。相同的输入将生成多种不同声带特征但符合设定的声音。
+        This section demonstrates the voice diversity of CharacterVoice. The same input will generate multiple speech samples with different vocal characteristics but consistent with the specified persona.
       </div>
       <div class="table-responsive">
         <table class="table table-bordered pt-2" id="table3">
@@ -121,11 +121,11 @@
       </div>
     </div>
 
-    <!-- 表格 4 -->
+    <!-- Table 4: Instruction Robustness -->
     <div class="content">
       <h2>Instruction Robustness</h2>
       <div class="desc-text">
-        本模块展示系统对指令的鲁棒性。不同表述但语义相似的指令，控制同一段文本生成的音频结果对比。
+        This section demonstrates the system's robustness to instructions. Different expressions with similar semantics are used to control the generation of the same text, and the resulting audio samples are compared.
       </div>
       <div class="table-responsive">
         <table class="table table-bordered pt-2" id="table4">
