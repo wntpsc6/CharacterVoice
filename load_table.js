@@ -15,13 +15,12 @@ async function fetchCSVData(csvUrl) {
         const lines = textData.trim().split('\n');
         if (lines.length < 2) return []; // 只有表头或为空
         
-        const headers = lines[0].split(',').map(h => h.trim());
+        const headers = lines[0].split('|').map(h => h.trim());
         const dataList = [];
         
         for (let i = 1; i < lines.length; i++) {
-            // 简单处理逗号分割（如果您的文本中含有逗号，建议将文本用双引号括起来，这里暂用简单split演示）
-            // 更严谨的话建议使用 PapaParse 库，这里为了零依赖手写了正则分割
-            const values = lines[i].match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g) || lines[i].split('|');
+            // 简单处理|分割
+            const values = lines[i].split('|');
             
             let obj = {};
             headers.forEach((h, idx) => {
