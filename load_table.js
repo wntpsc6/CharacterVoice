@@ -89,10 +89,10 @@ async function renderTable3() {
         tr.innerHTML = `
             <td class="instruction-cell">${data.instruction || 'XXX'}</td>
             <td class="text-cell">${data.text || 'XXX'}</td>
-            <td>${createAudioHTML(`data/CharacterVoice/${data.id}_1.wav`)}</td>
-            <td>${createAudioHTML(`data/CharacterVoice/${data.id}_2.wav`)}</td>
-            <td>${createAudioHTML(`data/CharacterVoice/${data.id}_3.wav`)}</td>
-            <td>${createAudioHTML(`data/CharacterVoice/${data.id}_4.wav`)}</td>
+            <td>${createAudioHTML(`data/CharacterVoice/${data.id}.wav`)}</td>
+            <td>${createAudioHTML(`data/CharacterVoice/${data.id}.wav`)}</td>
+            <td>${createAudioHTML(`data/CharacterVoice/${data.id}.wav`)}</td>
+            <td>${createAudioHTML(`data/CharacterVoice/${data.id}.wav`)}</td>
         `;
         tbody.appendChild(tr);
     });

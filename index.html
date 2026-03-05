@@ -30,11 +30,27 @@
   <body>
     <!-- 顶部标题 -->
     <div class="content">
-      <h1>CharacterVoice: Persona-Driven Controllable TTS</h1>
-      <div class="desc-text">
-        Welcome to the demo page. Below are the audio samples demonstrating the performance of CharacterVoice across various tasks.
+      <div class="text-center">
+        <h1 class="heading-size">
+          <strong>CharacterVoice: Persona-Driven Controllable TTS with Semantic Enhancement</strong>
+        </h1>
+      </div>
+
+      <h2>Abstract</h2>
+      <div>
+        Controllable TTS enables expressive speech synthesis, yet existing methods mainly focus on utterance-level control or simplistic speaker attributes, struggling to map holistic speaker descriptions to coherent speech. To bridge this gap, we propose CharacterVoice, a persona-driven framework that synthesizes customized speech from character profiles. Moving beyond acoustic-centric designs, CharacterVoice adopts persona-centric modeling conditioned on describable traits, aligning synthesis more intuitively with human intent. To capture vocal correlations and ensure stylistic coherence, we integrate instruction-level BERT embeddings as a semantic-enhanced prior. To address the scarcity of annotated data, we introduce a character-anchored annotation pipeline that leverages LLMs’ knowledge of well-known characters to link transient acoustic expressions with abstract personas. Experiments demonstrate that CharacterVoice outperforms baselines in both instruction adherence and naturalness.
       </div>
     </div>
+
+
+    <div class="content">
+      <h2 id="model-overview">Architecture Overview</h2>
+      <p style="text-align: center;">
+        <img src="overview.png" style="width: 60vw;">
+      </p>
+    </div>
+  </body>
+
 
     <!-- 表格 1 -->
     <div class="content">
