@@ -82,23 +82,25 @@ async function renderTable3() {
     const dataList = await fetchCSVData('table/table3-consistency.txt');
     const tbody = document.querySelector('#table3 tbody');
     if(dataList.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="3">No data loaded</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="6">No data loaded</td></tr>'; // 更新列数
         return;
     }
 
-    // 提取所有行共用的 Text
-    const sharedText = dataList[0].text || 'XXX';
-
     dataList.forEach((data, index) => {
         let tr = document.createElement('tr');
-        
         let html = `<td class="instruction-cell">${data.instruction || 'XXX'}<br>(trans: ${data['instruction-en'] || 'XXX'})</td>`;
-        
-        // 只有第一行需要渲染 Text 单元格，并设置 rowspan 合并
-        if (index === 0) {
-            html += `<td class="text-cell" rowspan="${dataList.length}">${sharedText}</td>`;
+
+        // 如果当前行是该文本组的第一个，则计算 rowspan 并渲染文本单元格
+        const isGroupStart = index === 0 || data.text !== dataList[index - 1].text;
+        if (isGroupStart) {
+            // 计算后续相同文本行数
+            let rowspan = 1;
+            for (let j = index + 1; j < dataList.length && dataList[j].text === data.text; j++) {
+                rowspan++;
+            }
+            html += `<td class="text-cell" rowspan="${rowspan}">${data.text || 'XXX'}</td>`;
         }
-        
+
         html += `<td>${createAudioHTML(`data/CharacterVoice/${data.id}.wav`)}</td>`;
         tr.innerHTML = html;
         tbody.appendChild(tr);
