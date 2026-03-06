@@ -43,10 +43,13 @@
     </div>
 
     <div class="content">
-      <h2 id="model-overview">Architecture Overview</h2>
+      <h2 id="model-overview">System Overview</h2>
       <p style="text-align: center;">
         <img src="picture/model.png" style="width: 60vw;">
       </p>
+      <div>
+        CharacterVoice is a novel Persona-Driven Controllable TTS framework that generates speech guided by holistic speaker profiles. It is trained on cinematic and television speech paired with corresponding instructions annotated via our character-anchored pipeline. Beyond relying solely on the text tokens of the transcript and instructions, CharacterVoice incorporates a BERT-encoded prior to deepen semantic comprehension, thereby strengthening stylistic coherence.
+      </div>
     </div>
   </body>
 
@@ -97,9 +100,9 @@
 
     <!-- Table 3: Instruction Robustness -->
     <div class="content">
-      <h2>Instruction Robustness</h2>
+      <h2>Persona Consistency</h2>
       <div class="desc-text">
-        This section demonstrates the system's robustness to instructions. Different expressions with similar semantics are used to control the generation of the same text, and the resulting audio samples are compared.
+        This section illustrates CharacterVoice's robustness to instructions. Results show that when prompted with different instructions corresponding to the same character, the generated speech samples maintain a high degree of consistency.
       </div>
       <div class="table-responsive">
         <table class="table table-bordered pt-2" id="table3">
@@ -119,7 +122,7 @@
     <div class="content">
       <h2>Voice Diversity</h2>
       <div class="desc-text">
-        This section demonstrates the voice diversity of CharacterVoice. The same input will generate multiple speech samples with different vocal characteristics but consistent with the specified persona.
+        This section illustrates the voice diversity of CharacterVoice, demonstrating its ability to perform one-to-many mapping. The framework takes a single input and generates multiple speech samples with varied vocal traits, while consistently adhering to the specified persona.
       </div>
       <div class="table-responsive">
         <table class="table table-bordered pt-2" id="table4">

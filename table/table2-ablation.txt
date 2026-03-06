@@ -1,7 +1,7 @@
 id|instruction|text|instruction-en
-20291|一位中年女性，自信张扬，是工厂职工，声音尖亮、语速快。|小林考上这么好的学校，这一出来就能当演员，要是再遇上一个好导演，这一提拔可了不得啊。|She is a middle-aged woman who is confident and flamboyant; she works in a factory and speaks in a sharp high-pitched voice at a fast pace.
-20240|一名幼年男孩，性格天真敏感，是学生，说话音色稚嫩、语调轻柔带怯。|我还带点点一起走，我不想跟他分开。|He is a young boy who is innocent and sensitive; he is a student who speaks in a childish voice with a gentle and timid tone.
-20363|一位固执的老年男性，性格传统，是退休工人，声音沙哑低沉，语速偏慢。|你买完了早点回来啊，我今天晚上呢，要带朋友回家吃饭。|He is a stubborn elderly man with traditional values; he is a retired worker whose voice is hoarse and low and who speaks relatively slowly.
-20390|一位热血青年男性，性格坚毅，职业为革命党人，声音清朗坚定，语调激昂而深情。|你读过天演论吗？物尽天择，你有没有想过当今世界列强有哪个国家不是因为革命才得以强盛的？|He is a passionate young man with a resolute character; he is a revolutionary who speaks in a clear and firm voice with an impassioned and deeply emotional tone.
-21348|一位中年女性，性格冷酷阴狠，身为魔门掌门，声音低沉缓慢，语调阴柔中透出煞气。|人都不在了，还留这些玩意干什么？|She is a middle-aged woman who is cold and ruthless; she is the leader of a demonic sect with a low slow voice and a soft yet sinister tone.
-22057|一位沉稳睿智的老年男性，身为宰相，声音浑厚低沉，语调沉稳有力。|臣不曾亲眼得见臣进门时，屋里灯是黑的，待到灯亮时，只见太子一人坐在桌旁，屋里的其他人都已经被杀死。|He is a steady and wise elderly man serving as a chancellor; he speaks in a rich low voice with a steady and powerful tone.
+20291|一位中年女性，自信张扬，是工厂职工，声音尖亮、语速快。|小林考上这么好的学校，这一出来就能当演员，要是再遇上一个好导演，这一提拔可了不得啊。|A confident and flamboyant middle-aged woman, a factory worker, with a sharp, high-pitched voice and a fast speaking pace.
+20240|一名幼年男孩，性格天真敏感，是学生，说话音色稚嫩、语调轻柔带怯。|我还带点点一起走，我不想跟他分开。|A young boy who is innocent and sensitive, a student speaking in a childish voice with a gentle and timid tone.
+20363|一位固执的老年男性，性格传统，是退休工人，声音沙哑低沉，语速偏慢。|你买完了早点回来啊，我今天晚上呢，要带朋友回家吃饭。|A stubborn elderly man with a traditional character, a retired worker whose voice is hoarse and low and whose speech is relatively slow.
+20390|一位热血青年男性，性格坚毅，职业为革命党人，声音清朗坚定，语调激昂而深情。|你读过天演论吗？物尽天择，你有没有想过当今世界列强有哪个国家不是因为革命才得以强盛的？|A passionate young man with a resolute character, a revolutionary, who speaks in a clear and firm voice with an impassioned and deeply emotional tone.
+21348|一位中年女性，性格冷酷阴狠，身为魔门掌门，声音低沉缓慢，语调阴柔中透出煞气。|人都不在了，还留这些玩意干什么？|A cold and ruthless middle-aged woman, the leader of a demonic sect, with a low, slow voice and a soft yet sinister tone.
+22057|一位沉稳睿智的老年男性，身为宰相，声音浑厚低沉，语调沉稳有力。|臣不曾亲眼得见臣进门时，屋里灯是黑的，待到灯亮时，只见太子一人坐在桌旁，屋里的其他人都已经被杀死。|A steady and wise elderly man serving as a chancellor, with a rich, low voice and a steady, powerful tone.
