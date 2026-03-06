@@ -122,7 +122,6 @@ async function renderTable4() {
             <td>${createAudioHTML(`data/diversity/${data.id}-1.wav`)}</td>
             <td>${createAudioHTML(`data/diversity/${data.id}-2.wav`)}</td>
             <td>${createAudioHTML(`data/diversity/${data.id}-3.wav`)}</td>
-            <td>${createAudioHTML(`data/diversity/${data.id}-4.wav`)}</td>
         `;
         tbody.appendChild(tr);
     });
