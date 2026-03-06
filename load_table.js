@@ -77,30 +77,10 @@ async function renderTable2() {
     });
 }
 
-// 表格 3 渲染逻辑 (一行包含4个生成的音频)
+// 表格 3 渲染逻辑 (Instruction Robustness - 包含Text列的纵向合并 Rowspan)
 async function renderTable3() {
     const dataList = await fetchCSVData('table/table3-consistency.txt');
     const tbody = document.querySelector('#table3 tbody');
-    if(dataList.length === 0) tbody.innerHTML = '<tr><td colspan="6">No data loaded</td></tr>';
-
-    dataList.forEach(data => {
-        let tr = document.createElement('tr');
-        tr.innerHTML = `
-            <td class="instruction-cell">${data.instruction || 'XXX'}<br>(trans: ${data['instruction-en'] || 'XXX'})</td>
-            <td class="text-cell">${data.text || 'XXX'}</td>
-            <td>${createAudioHTML(`data/consistency/${data.id}.wav`)}</td>
-            <td>${createAudioHTML(`data/consistency/${data.id}.wav`)}</td>
-            <td>${createAudioHTML(`data/consistency/${data.id}.wav`)}</td>
-            <td>${createAudioHTML(`data/consistency/${data.id}.wav`)}</td>
-        `;
-        tbody.appendChild(tr);
-    });
-}
-
-// 表格 4 渲染逻辑 (Instruction Robustness - 包含Text列的纵向合并 Rowspan)
-async function renderTable4() {
-    const dataList = await fetchCSVData('table/table4-diversity.txt');
-    const tbody = document.querySelector('#table4 tbody');
     if(dataList.length === 0) {
         tbody.innerHTML = '<tr><td colspan="3">No data loaded</td></tr>';
         return;
@@ -121,6 +101,26 @@ async function renderTable4() {
         
         html += `<td>${createAudioHTML(`data/CharacterVoice/${data.id}.wav`)}</td>`;
         tr.innerHTML = html;
+        tbody.appendChild(tr);
+    });
+}
+
+// 表格 4 渲染逻辑 (一行包含4个生成的音频)
+async function renderTable4() {
+    const dataList = await fetchCSVData('table/table4-diversity.txt');
+    const tbody = document.querySelector('#table4 tbody');
+    if(dataList.length === 0) tbody.innerHTML = '<tr><td colspan="6">No data loaded</td></tr>';
+
+    dataList.forEach(data => {
+        let tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td class="instruction-cell">${data.instruction || 'XXX'}<br>(trans: ${data['instruction-en'] || 'XXX'})</td>
+            <td class="text-cell">${data.text || 'XXX'}</td>
+            <td>${createAudioHTML(`data/diversity/${data.id}.wav`)}</td>
+            <td>${createAudioHTML(`data/diversity/${data.id}.wav`)}</td>
+            <td>${createAudioHTML(`data/diversity/${data.id}.wav`)}</td>
+            <td>${createAudioHTML(`data/diversity/${data.id}.wav`)}</td>
+        `;
         tbody.appendChild(tr);
     });
 }

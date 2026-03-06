@@ -5,6 +5,3 @@ id|instruction|text|instruction-en
 20390|一位热血青年男性，性格坚毅，职业为革命党人，声音清朗坚定，语调激昂而深情。|你读过天演论吗？物尽天择，你有没有想过当今世界列强有哪个国家不是因为革命才得以强盛的？|He is a passionate young man with a resolute character; he is a revolutionary who speaks in a clear and firm voice with an impassioned and deeply emotional tone.
 21348|一位中年女性，性格冷酷阴狠，身为魔门掌门，声音低沉缓慢，语调阴柔中透出煞气。|人都不在了，还留这些玩意干什么？|She is a middle-aged woman who is cold and ruthless; she is the leader of a demonic sect with a low slow voice and a soft yet sinister tone.
 22057|一位沉稳睿智的老年男性，身为宰相，声音浑厚低沉，语调沉稳有力。|臣不曾亲眼得见臣进门时，屋里灯是黑的，待到灯亮时，只见太子一人坐在桌旁，屋里的其他人都已经被杀死。|He is a steady and wise elderly man serving as a chancellor; he speaks in a rich low voice with a steady and powerful tone.
-20390|一位热血青年男性，性格坚毅，职业为革命党人，声音清朗坚定，语调激昂而深情。|你读过天演论吗？物尽天择，你有没有想过当今世界列强有哪个国家不是因为革命才得以强盛的？|He is a passionate young man with a resolute character; he is a revolutionary who speaks in a clear and firm voice with an impassioned and deeply emotional tone.
-21348|一位中年女性，性格冷酷阴狠，身为魔门掌门，声音低沉缓慢，语调阴柔中透出煞气。|人都不在了，还留这些玩意干什么？|She is a middle-aged woman who is cold and ruthless; she is the leader of a demonic sect with a low slow voice and a soft yet sinister tone.
-22057|一位沉稳睿智的老年男性，身为宰相，声音浑厚低沉，语调沉稳有力。|臣不曾亲眼得见臣进门时，屋里灯是黑的，待到灯亮时，只见太子一人坐在桌旁，屋里的其他人都已经被杀死。|He is a steady and wise elderly man serving as a chancellor; he speaks in a rich low voice with a steady and powerful tone.
