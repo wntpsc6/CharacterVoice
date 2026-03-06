@@ -101,7 +101,7 @@ async function renderTable3() {
             html += `<td class="text-cell" rowspan="${rowspan}">${data.text || 'XXX'}</td>`;
         }
 
-        html += `<td>${createAudioHTML(`data/CharacterVoice/${data.id}.wav`)}</td>`;
+        html += `<td>${createAudioHTML(`data/consistency/${data.id}.wav`)}</td>`;
         tr.innerHTML = html;
         tbody.appendChild(tr);
     });
