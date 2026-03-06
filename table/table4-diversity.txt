@@ -1,0 +1,3 @@
+id|instruction|text|instruction-en
+20040|一位中年女性，性格温和理性，是位母亲，说话音色柔和清晰，语调平稳温和。|不管怎么说，上次钟老师道歉认个错，这事就解决了，但是他迟迟不表态。|A middle-aged woman with a gentle and rational personality, a mother who speaks in a soft, clear tone with a calm and warm intonation.
+20086|一位壮年男性，冷静沉稳，是位特工，声音低沉磁性、语调平稳克制。|师姐，我的打火机是不是在你那儿|A middle-aged man who is calm and composed, a special agent, with a deep, magnetic voice and a steady, restrained tone.

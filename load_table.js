@@ -118,10 +118,11 @@ async function renderTable4() {
         tr.innerHTML = `
             <td class="instruction-cell">${data.instruction || 'XXX'}<br>(trans: ${data['instruction-en'] || 'XXX'})</td>
             <td class="text-cell">${data.text || 'XXX'}</td>
-            <td>${createAudioHTML(`data/diversity/${data.id}.wav`)}</td>
-            <td>${createAudioHTML(`data/diversity/${data.id}.wav`)}</td>
-            <td>${createAudioHTML(`data/diversity/${data.id}.wav`)}</td>
-            <td>${createAudioHTML(`data/diversity/${data.id}.wav`)}</td>
+            <td>${createAudioHTML(`data/diversity/${data.id}-0.wav`)}</td>
+            <td>${createAudioHTML(`data/diversity/${data.id}-1.wav`)}</td>
+            <td>${createAudioHTML(`data/diversity/${data.id}-2.wav`)}</td>
+            <td>${createAudioHTML(`data/diversity/${data.id}-3.wav`)}</td>
+            <td>${createAudioHTML(`data/diversity/${data.id}-4.wav`)}</td>
         `;
         tbody.appendChild(tr);
     });
