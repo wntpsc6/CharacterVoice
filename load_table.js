@@ -41,7 +41,7 @@ async function fetchCSVData(csvUrl) {
 
 // 表格 1 渲染逻辑
 async function renderTable1() {
-    const dataList = await fetchCSVData('table/table1-persona.csv');
+    const dataList = await fetchCSVData('table/table1-persona.txt');
     const tbody = document.querySelector('#table1 tbody');
     if(dataList.length === 0) tbody.innerHTML = '<tr><td colspan="6">No data loaded (Please ensure table/table1-persona.csv exists)</td></tr>';
     
@@ -61,7 +61,7 @@ async function renderTable1() {
 
 // 表格 2 渲染逻辑
 async function renderTable2() {
-    const dataList = await fetchCSVData('table/table2-ablation.csv');
+    const dataList = await fetchCSVData('table/table2-ablation.txt');
     const tbody = document.querySelector('#table2 tbody');
     if(dataList.length === 0) tbody.innerHTML = '<tr><td colspan="4">No data loaded</td></tr>';
 
@@ -79,7 +79,7 @@ async function renderTable2() {
 
 // 表格 3 渲染逻辑 (一行包含4个生成的音频)
 async function renderTable3() {
-    const dataList = await fetchCSVData('table/table3-consistency.csv');
+    const dataList = await fetchCSVData('table/table3-consistency.txt');
     const tbody = document.querySelector('#table3 tbody');
     if(dataList.length === 0) tbody.innerHTML = '<tr><td colspan="6">No data loaded</td></tr>';
 
@@ -88,10 +88,10 @@ async function renderTable3() {
         tr.innerHTML = `
             <td class="instruction-cell">${data.instruction || 'XXX'}</td>
             <td class="text-cell">${data.text || 'XXX'}</td>
-            <td>${createAudioHTML(`data/CharacterVoice/${data.id}.wav`)}</td>
-            <td>${createAudioHTML(`data/CharacterVoice/${data.id}.wav`)}</td>
-            <td>${createAudioHTML(`data/CharacterVoice/${data.id}.wav`)}</td>
-            <td>${createAudioHTML(`data/CharacterVoice/${data.id}.wav`)}</td>
+            <td>${createAudioHTML(`data/consistency/${data.id}.wav`)}</td>
+            <td>${createAudioHTML(`data/consistency/${data.id}.wav`)}</td>
+            <td>${createAudioHTML(`data/consistency/${data.id}.wav`)}</td>
+            <td>${createAudioHTML(`data/consistency/${data.id}.wav`)}</td>
         `;
         tbody.appendChild(tr);
     });
@@ -99,7 +99,7 @@ async function renderTable3() {
 
 // 表格 4 渲染逻辑 (Instruction Robustness - 包含Text列的纵向合并 Rowspan)
 async function renderTable4() {
-    const dataList = await fetchCSVData('table/table4-diversity.csv');
+    const dataList = await fetchCSVData('table/table4-diversity.txt');
     const tbody = document.querySelector('#table4 tbody');
     if(dataList.length === 0) {
         tbody.innerHTML = '<tr><td colspan="3">No data loaded</td></tr>';

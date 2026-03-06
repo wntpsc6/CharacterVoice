@@ -1,0 +1,13 @@
+id|instruction|text|instruction-en
+20390-0|一位热血青年男性，性格坚毅，职业为革命党人，声音清朗坚定，语调激昂而深情。|你读过天演论吗？物尽天择，你有没有想过当今世界列强有哪个国家不是因为革命才得以强盛的？|A passionate young man with a resolute character who is a revolutionary; he speaks with a clear, firm voice and an impassioned, deeply emotional tone.
+20390-1|一名坚毅果敢的青年男子，职业是革命志士，声音坚定有力，语调饱含深情。|你读过天演论吗？物尽天择，你有没有想过当今世界列强有哪个国家不是因为革命才得以强盛的？|A determined and bold young man who is a revolutionary fighter; he has a strong, steady voice and a tone that is full of deep feeling.
+20390-2|热血而坚毅的青年男子，投身革命事业，说话语速平稳，语调激昂且富有感染力。|你读过天演论吗？物尽天择，你有没有想过当今世界列强有哪个国家不是因为革命才得以强盛的？|A passionate and resolute young man devoted to the revolutionary cause; he speaks at a steady pace with an impassioned and persuasive tone.
+20685-0|一位幼年女孩，天真纯善，是小学生，声音清脆稚嫩，语调柔和带童真。|想起来了，看到小桂子就领她回来，你不打她也不骂她。|A young girl who is innocent and pure-hearted; she is a primary school student with a bright, childish voice and a gentle, childlike tone.
+20685-1|一位北平城南的小学生女孩，好奇聪慧，声音语速适中，语调充满童真。|想起来了，看到小桂子就领她回来，你不打她也不骂她。|A primary school girl from the southern district of Beiping who is curious and clever; she speaks at a moderate pace with a tone full of childlike wonder.
+20685-2|女童年幼健康，性格聪慧纯真，声音柔和清脆，语速适中带老北京腔调。|想起来了，看到小桂子就领她回来，你不打她也不骂她。|A young, healthy girl who is clever and pure-hearted, with a soft, clear voice, a moderate speaking pace, and a classic Old Beijing accent.
+20864-0|一位冷静聪慧的少女，身为中学生，声音清冷柔和、语调平淡克制。|我爸妈死于一场车祸，养父，从孤儿院里把我带回来。|A calm and intelligent teenage girl who is a middle school student; she speaks in a cool, gentle voice with a restrained and even tone.
+20864-1|作为神秘而善于伪装的女少年，她以平淡语调和清冷音色传递简练话语。|我爸妈死于一场车祸，养父，从孤儿院里把我带回来。|She is a mysterious and well-disguised young female who delivers concise lines in a flat tone and a cool timbre.
+20864-2|少年时期的她冷静缜密，作为中学生，以清冷音色和平淡语调道出含蓄之言。|我爸妈死于一场车祸，养父，从孤儿院里把我带回来。|In her youth she is calm and meticulous; as a middle school student she speaks with a cool timbre and a restrained, understated tone.
+22149-0|这位优柔寡断的年轻男子是工程师，声音柔和且语调平稳。|趁着现在我还能替自己做主的时候，我要给自己一个好的交代。|This indecisive young man is an engineer who speaks in a soft voice with a steady tone.
+22149-1|一名正直善良的青年男性工程师，说话音色沉稳、略带书卷气。|趁着现在我还能替自己做主的时候，我要给自己一个好的交代。|He is an upright and kind young male engineer who speaks in a steady voice with a slightly scholarly air.
+22149-2|温和内敛的工程师青年，声音柔和、语调不疾不徐。|趁着现在我还能替自己做主的时候，我要给自己一个好的交代。|A gentle and reserved young engineer, he has a soft voice and speaks at an unhurried, measured pace.

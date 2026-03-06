@@ -1,0 +1,9 @@
+id|instruction|text|instruction-en
+20040|一位中年女性，性格温和理性，是位母亲，说话音色柔和清晰，语调平稳温和。|不管怎么说，上次钟老师道歉认个错，这事就解决了，但是他迟迟不表态。|A middle-aged woman with a gentle and rational personality, a mother who speaks in a soft, clear tone with a calm and warm intonation.
+20127|一位青年男性，孤傲不羁，身为游侠，声音低沉磁性，语调从容带嘲讽。|因为我喝第一口酒，就知道里面有迷药，所以我先服过解药装醉。|A young man who is aloof and unruly, a wandering hero with a deep, magnetic voice and a composed, mocking tone.
+20240|一名幼年男孩，性格天真敏感，是学生，说话音色稚嫩、语调轻柔带怯。|我还带点点一起走，我不想跟他分开。|A young boy who is innocent and sensitive, a student speaking in a childish voice with a gentle and timid tone.
+20363|一位固执的老年男性，性格传统，是退休工人，声音沙哑低沉，语速偏慢。|你买完了早点回来啊，我今天晚上呢，要带朋友回家吃饭。|A stubborn elderly man with a traditional character, a retired worker whose voice is hoarse and low and whose speech is relatively slow.
+20864|一位冷静聪慧的少女，身为中学生，声音清冷柔和、语调平淡克制。|我爸妈死于一场车祸，养父，从孤儿院里把我带回来。|A calm and intelligent teenage girl who is a middle school student, with a cool, gentle voice and a restrained, flat tone.
+21339|一位青年女性，机敏狡黠，身为魔门妖女，声音娇柔清甜，语调婉转妩媚。|所有男人看见我连死都顾不得了。但是你，你是世上最不解温柔、最没良心的男人，不过我喜欢。|A young woman who is sharp and sly, a bewitching sorceress of the demonic sect, with a sweet, delicate voice and a coquettish, alluring tone.
+21449|一名温和谦逊的少年，是重点高中的优等生，声音清朗温和，语速适中。|放心吧，我答应的事情一定会做到的。|A gentle and modest adolescent who is a top student at a prestigious high school, with a clear, mild voice and a moderate speaking pace.
+22057|一位沉稳睿智的老年男性，身为宰相，声音浑厚低沉，语调沉稳有力。|臣不曾親眼得見臣進門時，屋里灯是黑的，待到灯亮时，只见太子一人坐在桌旁，屋里的其他人都已经被杀死。|A steady and wise elderly man serving as a chancellor, with a rich, low voice and a steady, powerful tone.
