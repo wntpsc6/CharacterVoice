@@ -43,12 +43,12 @@ async function fetchCSVData(csvUrl) {
 async function renderTable1() {
     const dataList = await fetchCSVData('table/table1-persona.txt');
     const tbody = document.querySelector('#table1 tbody');
-    if(dataList.length === 0) tbody.innerHTML = '<tr><td colspan="6">No data loaded (Please ensure table/table1-persona.csv exists)</td></tr>';
+    if(dataList.length === 0) tbody.innerHTML = '<tr><td colspan="6">No data loaded (Please ensure table/table1-persona.txt exists)</td></tr>';
     
     dataList.forEach(data => {
         let tr = document.createElement('tr');
         tr.innerHTML = `
-            <td class="instruction-cell">${data.instruction || 'XXX'}</td>
+            <td class="instruction-cell">${data.instruction || 'XXX'}<br>(trans: ${data['instruction-en'] || 'XXX'})</td>
             <td class="text-cell">${data.text || 'XXX'}</td>
             <td>${createAudioHTML(`data/CosyVoice2/${data.id}.wav`)}</td>
             <td>${createAudioHTML(`data/VoxInstruct/${data.id}.wav`)}</td>
@@ -68,7 +68,7 @@ async function renderTable2() {
     dataList.forEach(data => {
         let tr = document.createElement('tr');
         tr.innerHTML = `
-            <td class="instruction-cell">${data.instruction || 'XXX'}</td>
+            <td class="instruction-cell">${data.instruction || 'XXX'}<br>(trans: ${data['instruction-en'] || 'XXX'})</td>
             <td class="text-cell">${data.text || 'XXX'}</td>
             <td>${createAudioHTML(`data/Baseline/${data.id}.wav`)}</td>
             <td>${createAudioHTML(`data/CharacterVoice/${data.id}.wav`)}</td>
@@ -86,7 +86,7 @@ async function renderTable3() {
     dataList.forEach(data => {
         let tr = document.createElement('tr');
         tr.innerHTML = `
-            <td class="instruction-cell">${data.instruction || 'XXX'}</td>
+            <td class="instruction-cell">${data.instruction || 'XXX'}<br>(trans: ${data['instruction-en'] || 'XXX'})</td>
             <td class="text-cell">${data.text || 'XXX'}</td>
             <td>${createAudioHTML(`data/consistency/${data.id}.wav`)}</td>
             <td>${createAudioHTML(`data/consistency/${data.id}.wav`)}</td>
@@ -112,7 +112,7 @@ async function renderTable4() {
     dataList.forEach((data, index) => {
         let tr = document.createElement('tr');
         
-        let html = `<td class="instruction-cell">${data.instruction || 'XXX'}</td>`;
+        let html = `<td class="instruction-cell">${data.instruction || 'XXX'}<br>(trans: ${data['instruction-en'] || 'XXX'})</td>`;
         
         // 只有第一行需要渲染 Text 单元格，并设置 rowspan 合并
         if (index === 0) {
