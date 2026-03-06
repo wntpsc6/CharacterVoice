@@ -6,4 +6,4 @@ id|instruction|text|instruction-en
 20864|一位冷静聪慧的少女，身为中学生，声音清冷柔和、语调平淡克制。|我爸妈死于一场车祸，养父，从孤儿院里把我带回来。|A calm and intelligent teenage girl who is a middle school student, with a cool, gentle voice and a restrained, flat tone.
 21339|一位青年女性，机敏狡黠，身为魔门妖女，声音娇柔清甜，语调婉转妩媚。|所有男人看见我连死都顾不得了。但是你，你是世上最不解温柔、最没良心的男人，不过我喜欢。|A young woman who is sharp and sly, a bewitching sorceress of the demonic sect, with a sweet, delicate voice and a coquettish, alluring tone.
 21449|一名温和谦逊的少年，是重点高中的优等生，声音清朗温和，语速适中。|放心吧，我答应的事情一定会做到的。|A gentle and modest adolescent who is a top student at a prestigious high school, with a clear, mild voice and a moderate speaking pace.
-22057|一位沉稳睿智的老年男性，身为宰相，声音浑厚低沉，语调沉稳有力。|臣不曾親眼得見臣進門時，屋里灯是黑的，待到灯亮时，只见太子一人坐在桌旁，屋里的其他人都已经被杀死。|A steady and wise elderly man serving as a chancellor, with a rich, low voice and a steady, powerful tone.
+22057|一位沉稳睿智的老年男性，身为宰相，声音浑厚低沉，语调沉稳有力。|臣不曾亲眼得见臣进门时，屋里灯是黑的，待到灯亮时，只见太子一人坐在桌旁，屋里的其他人都已经被杀死。|A steady and wise elderly man serving as a chancellor, with a rich, low voice and a steady, powerful tone.
